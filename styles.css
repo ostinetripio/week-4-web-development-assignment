@@ -1,0 +1,52 @@
+body {
+    background-color: slateblue;
+}
+
+a {
+    color: white;
+    text-align: justify;
+}
+
+text-highlight {
+    display: inline-block;
+}
+
+.flex-item {
+    display: inline-block;
+    flex: 1 1 33%;
+    background-color: rgb(236, 4, 4);
+    gap: 40px;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+                         "header section aside";
+    grid-template-columns: 2fr 2fr 1fr ;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+ 
+header {
+    grid-area: header;
+    background-color: blue;
+}
+
+section {
+    grid-area: section;
+    background-color: rgb(131, 136, 88);
+}
+
+aside {
+    grid-area: aside;
+    background-color: blueviolet;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    background-color: rgb(192, 188, 188);
+}
